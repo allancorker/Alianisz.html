@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+            <script src="js/bootstrap.js"></script>
+            <style>
+                img{
+                    transition: 2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+            </style>
+    </head>
+    <body class="bg-dark">
+
+         <!-- navbar section start -->
+         <section>
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(108, 86, 87);">
+                    <a href="#" class="navbar-brand text-danger"><h3>AlianiSZ Entertainment Hub</h3></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-link active text-info">Home</a>
+                            <a href="MoviesandSeries.html" class="nav-link text-warning">Movies and Series</a>
+                            <a href="music.html" class="nav-link text-info">Music</a>
+                            <a href="#" class="nav-link text-warning">Games</a>
+                            <a href="#" class="nav-link text-info">Tools</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">logIn Here</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- navbar section end -->
+        
+         <!-- Modal div start-->
+         <div class="modal" id="mymodal"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header" style="background-color: rgb(193, 191, 188);">
+                        <h4>LOGIN</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                        <!-- modal body -->
+                        <div class="modal-body" style="background-color: bisque;">
+                            <form action="">
+                                <input type="email" placeholder="Enter Email" class="form-control"> <br> 
+                                <input type="password" placeholder="Enter password" class="form-control"> <br> 
+                                <h6>Additional Info</h6>
+                                <input type="text" placeholder="Telephone N.o" class="form-control"> <br>
+                                <label for=""><u>Gender</u></label>  <br>
+                                <input type="checkbox" name="" id="">Male <br> 
+                                <input type="checkbox">Female <br> <br>
+                                <label for=""> <u>Preference [Atmost three DO NOT select all]</u></label> <br>
+                                <input type="radio"> Movies
+                                <input type="radio" name="" id="">Series
+                                <input type="radio">Music
+                                <input type="radio">Games <br> <br>
+                                <button type="submit" class="btn btn-success">Done</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: darkgray;">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal div end -->
+        
+    </body>
+</html>

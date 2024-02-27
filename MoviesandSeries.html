@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies and Series</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
+        <style>
+            img{
+                transition: 2s;
+            }
+            img:hover{
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body class="bg-dark">
+
+         <!-- navbar section start -->
+         <section>
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(108, 86, 87);">
+                    <a href="#" class="navbar-brand text-danger"><h3>AlianiSZ Entertainment Hub</h3></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-link active text-info">Home</a>
+                            <a href="MoviesandSeries.html" class="nav-link text-warning">Movies and Series</a>
+                            <a href="#" class="nav-link text-info">Music</a>
+                            <a href="#" class="nav-link text-warning">Games</a>
+                            <a href="#" class="nav-link text-info">Tools</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">logIn Here</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- navbar section end -->
+
+        <!-- Modal div start-->
+        <div class="modal" id="mymodal"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header" style="background-color: rgb(193, 191, 188);">
+                        <h4>LOGIN</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                        <!-- modal body -->
+                        <div class="modal-body" style="background-color: bisque;">
+                            <form action="">
+                                <input type="email" placeholder="Enter Email" class="form-control"> <br> 
+                                <input type="password" placeholder="Enter password" class="form-control"> <br> 
+                                <h6>Additional Info</h6>
+                                <input type="text" placeholder="Telephone N.o" class="form-control"> <br>
+                                <label for=""><u>Gender</u></label>  <br>
+                                <input type="checkbox" name="" id="">Male <br> 
+                                <input type="checkbox">Female <br> <br>
+                                <label for=""> <u>Preference [Atmost three DO NOT select all]</u></label> <br>
+                                <input type="radio"> Movies
+                                <input type="radio" name="" id="">Series
+                                <input type="radio">Music
+                                <input type="radio">Games <br> <br>
+                                <button type="submit" class="btn btn-success">Done</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: darkgray;">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal div end -->
+
+        <!-- carousel section start -->
+        <section class="row text-center">
+            <div class="col-md-12 p-4">
+                <div class="carousel slide" id="myCarousel" data-bs-ride="carouse1">
+                    <!-- Wrapper for Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/movies&seriesImages/film-1328405_960_720.jpg" alt="movie template1" class="d-block " style="width:100%; height: 500px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/movies&seriesImages/war-venue-494345_960_720.jpg" alt="movie slide" class="d-block" style="width:100%; height: 500px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/movies&seriesImages/istockphoto-1359830355-170667a.webp" alt="Romance Slide1" class="d-block" style="width:100%; height: 500px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/movies&seriesImages/istockphoto-1503900456-612x612.jpg" alt="Romance Slide2" class="d-block" style="width:100%; height: 500px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/movies&seriesImages/photo-1601513445498-5dbffc8d5d5a.avif" alt="Horror Slide1" class="d-block" style="width:100%; height: 500px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/movies&seriesImages/istockphoto-1003254332-612x612.jpg" alt="Horror Slide2" class="d-block" style="width:100%; height: 500px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/movies&seriesImages/istockphoto-1236469526-1024x1024.webp" alt="Horror Slide4" class="d-block" style="width:100%; height: 500px;">
+                        </div>
+                    </div>
+                    <!-- carousel controls-->
+                    <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- carousel section end -->
+
+        <!-- content section start -->
+
+        <section class="container-fluid text-center">
+            <!-- Row 1 -->
+            <h2 class="text-start text-primary"><u>Movies</u></h2>
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/multiverse-of-madness-1571343_960_720.jpg" alt="strange multiverse-of-madness" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Dr.Strange Multiverse-of-madness</h4>
+                            <p><b>Genre:</b>Action, Adventure & Sci-Fi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/background-7342022_960_720.jpg" alt="spider man" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Spider-Man Far from Home</h4>
+                            <p><b>Genre:</b>Action & Science-Fiction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/marvel-2688068_960_720.jpg" alt="deadpool" style="height: 430px;">
+                        <div class="card-body">
+                            <h4>Deadpool</h4>
+                            <p><b>Genre:</b>Thrilling Action and Fantasy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/ai-generated-8095115_960_720.png" alt="hulk image" style="height: 430px;">
+                        <div class="card-body">
+                            <h4>Hulk</h4>
+                            <p><b>Genre:</b> Action, Science & Crime</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <h2 class="text-start text-primary"><u>Series</u></h2>  
+            <!-- Row 2 -->
+            <div class="row bg-secondary p-1">
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/stranger-things-7322649_1280.png" alt="Straner things" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Stranger Things</h4>
+                            <p><b>Genre: </b>Horrorific teen adventure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/The_Chi.jpg" alt="Chi">
+                        <div class="card-body">
+                            <h4>The_Chi</h4>
+                            <p><b>Genre: </b>Drama, Crime & Romance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/leagcies.jpg" alt="leagacies" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Leagacies</h4>
+                            <p><b>Genre: </b>Fantasy Drama</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/Vampire academy.jpg" alt="Vacademy" style="height: 380px;">
+                        <div class="card-body">
+                            <h4>Vampire Academy</h4>
+                            <p><b>Genre: </b>Supernatural, fictional & Romance</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 3 -->
+            <h2 class="text-start text-primary"><u>Horror Movies</u></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/ITchpt2.jpg" alt="IT" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>IT Chapter Two</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/nun-cp-001r-1536872412.jpg" alt="Nun 2" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>The Nun Two</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/the-popes-exorcist-ending-explained-netflix.webp" alt="pope" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>The Pope's Exorcist</h4>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 4 -->
+            <h2 class="text-start text-primary"><u>Comedy</u></h2>
+            <div class="row bg-secondary p-1">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/Coming 2 america.jpeg" alt="cmng2america" style="height: 300px;">
+                        <div class="card-body">
+                            <h4>Coming 2 America </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/the mask.jpeg" alt="mask" style="height: 300px;">
+                        <div class="card-body">
+                            <h4>The Mask Two: Born of the Mask </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/mudbuddies.jpg" alt="mudbuddies" style="height: 300px;">
+                        <div class="card-body">
+                            <h4>Mud Buddies</h4>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 5 -->
+            <h2 class="text-start text-primary"><u>Animations</u></h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/miraculuos.jpg" alt="miraculous">
+                        <div class="card-body">
+                            <h4>Miraculuos Ladybug & Catnoir</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/frozen-2-magic-61x91-5cm-movie-posters-34244-1-p.jpg" alt="frozen">
+                        <div class="card-body">
+                            <h4>Frozen 2</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/BIGHERO6_PP_DaniB.jpg" alt="bigHero6" style="height: 480px;">
+                        <div class="card-body">
+                            <h4>Big Hero 6</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/movies&seriesImages/wish dragon.jpg" alt="wishdragon">
+                        <div class="card-body">
+                            <h4>Wish Dragon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <div class="row bg-secondary text-start p-1">
+                <div class="col-md-4">
+                    <h5>Commonly Known Websites include</h5>
+                    <ul>
+                        <li>Netflix</li>
+                        <li>Amazon</li>
+                        <li>Zulu</li>
+                        <li>Prime Videos</li>
+                        <li>Disney +</li>
+                    </ul>
+                    <p>...and many more</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>We'd love it if you leave us with your comments below</h6>
+                    <form action="">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control" class="bg-info" style="height: 150px;width: 320px;">Any comments...</textarea> <br>
+                        <button type="submit" class="btn btn- btn-outline-light">Send comment</button> <br> <br>
+                        <span class="btn btn-success btn-outline-muted">Thank you</span>
+                    </form>
+                </div>
+                <br> <br>
+                <div class="col-md-3 mx-4">
+                    <h4>Follow us on our social media platforms</h4>
+                    <img src="Images/in.png" alt="IGicon" style="height: 25px;"> <a href="#" class="text-danger">alianisz01_KE</a>
+                    <br> <br>
+                    <img src="Images/x.png" alt="Xicon" style="height: 25px;">      <a href="#" class="text-dark">alianisz_KE01</a>
+                    <br> <br>
+                    <img src="Images/fb.png" alt="Fbicon" style="height: 25px;">   <a href="#" class="text-primary">alianisz_KE01</a>
+                    <br> <br>
+                </div>
+            </div>
+
+        </section>
+        <!-- content section end -->
+
+        <!-- footer section start -->
+        <section>
+            <footer style="background-color: rgb(93, 87, 80)">
+                <div class="text-center">
+                    <span class="text-success"><center>Sign up for free</center></span>
+                    <button type="submit" class="btn btn-secondary">Sign Up</button>
+                </div>
+                <div class="text-center" style="background-color: rgb(69, 58, 58);">
+                    <p class="text-secondary"><b>Developed by Allan Corker &copy; 2024. All Rights Reserved</b></p>
+                </div>
+            </footer>
+        </section>
+        <!-- footer section end -->
+        
+    </body>
+</html>
